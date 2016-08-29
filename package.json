@@ -1,0 +1,43 @@
+{
+  "name": "minimales6-v01",
+  "version": "1.0.0",
+  "description": "A minimal website that would be required to run ES6 type code. version 1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eapostol/minimalES6-v01.git"
+  },
+  "keywords": [
+    "ES6",
+    "ECMAScript",
+    "2015",
+    "Javascript",
+    "HTML5",
+    "CSS"
+  ],
+  "author": "Edward J. Apostol",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eapostol/minimalES6-v01/issues"
+  },
+  "homepage": "https://github.com/eapostol/minimalES6-v01#readme",
+  "devDependencies": {
+    "babel-cli": "^6.14.0",
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.14.0",
+    "css-loader": "^0.24.0",
+    "file-loader": "^0.9.0",
+    "node-libs-browser": "^1.0.0",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^4.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.0"
+  }
+}
