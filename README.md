@@ -1,7 +1,12 @@
 # minimalES6-v01
-A minimal website that would be required to run ES6 type code. version 1
 
-THIS GIT
+A minimal website that would be required to run ES6 type code. 
+
+Version 1.1.
+
+
+THIS GIT URL is at 
+
 https://github.com/eapostol/minimalES6-v01.git
 
 I created the repo on the git website, then cloned it into a local
@@ -12,8 +17,28 @@ the terminal.
 
 I filled in the information to initialize the repo as required.
 
-Then I installed the following modules the order is referenced below,
-using npm install --save-dev nameOfModule as usual.
+Then install webpack GLOBALLY. this makes it available to transpile
+at your terminal. I discovered this issue through user testing with Ala.
+
+npm install -g webpack
+
+Next, I installed the following modules the order is referenced below,
+using 
+
+npm install --save-dev nameOfModule
+ 
+as usual. 
+
+Ignore the version numbers referenced below, I copied the module names 
+from package.json. So at the terminal it would be like
+
+npm install --save-dev webpack
+npm install --save-dev webpack-dev-server
+
+etc.
+
+Not specifying at @latest installs the latest version anyway. But 
+note that they updated BABEL (thanks to my interference lol).
 
     1. "webpack": "^1.13.2",
     2. "webpack-dev-server": "^1.15.0"
@@ -31,8 +56,8 @@ using npm install --save-dev nameOfModule as usual.
 
 No warnings at this point... 
  
-Created a file called .babelrc . see the source file for the code.
-This makes babel use ES2015 for sure.
+Then create a file called .babelrc . You see the source file for the 
+code in this repo. This makes babel use ES2015 for sure.
 
 Then I modified the following in the scripts: property of package.json
 to add build and start properties
@@ -44,16 +69,18 @@ to add build and start properties
   }
   
  Create a file called webpack.config.js 
-  * use my example web.config.js 
-  * its commented, so review it. You don't have to master NODE,
-  * but be familiar with the basics of webpack.config.js
-  * a good starter video is https://www.youtube.com/watch?v=TaWKUpahFZM
+  - use my example web.config.js 
+  - its commented, so review it. You don't have to master NODE to know
+  the intricacies of what is happening, but be familiar with the basics 
+  of webpack.config.js
+  - a good starter video to learn webpack is at
+   https://www.youtube.com/watch?v=TaWKUpahFZM
   
-   
-   
- FINALLY Create some ES6 classes. see the /src folder.
+
+ FINALLY Create some sample ES6 classes. see the /src folder.
+ 
  There is index.js, and sample classes to be imported, called
- Person.js, and Car.js
+ Person.js, and Car.js.
  
  -index.js is 'linked' to index.html and becomes the 'launcher' for
  the app. It brings all the code together.
