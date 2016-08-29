@@ -54,7 +54,7 @@ module.exports = {
     output: {
         path: process.cwd(),
         publicPath: '/yourProjectName/',
-        filename: join(PATHS.build,'bundle.js')
+        filename: 'bundle.js'
     },
     module: {
         loaders: [{
