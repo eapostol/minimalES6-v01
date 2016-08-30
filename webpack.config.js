@@ -1,24 +1,29 @@
 /**
  * Created by Edward_J_Apostol on 2016-08-29.
  */
-/* the following below are commands from node
-// I assume you installed node, otherwise it would not work
-// read up a little bit about node to understand what it does.
-// in a nutshell, its an interpreter of javascript that runs
+/*
+// The commands listed below are from Node.js documentation
+// I assume you installed node, otherwise, this would not work
+// If you are unsure what node.js does, visit http://www.nodejs.org .
+// In a nutshell, nodejs is a 'server-side' javascript interpreter that runs
 // outside the web page and performs tasks related to your OS.
+
   require: means require something
   path: helps finds files and folders - https://nodejs.org/api/path.html
   resolve: figures out the full 'path' to a file or folder
   require ('webpack') means you need webpack (assuming you installed it)_
+
   */
 const join = require('path').join;
 const resolve = require('path').resolve;
 const webpack = require('webpack');
 
-// define an object that will reference appropriate directories
+/*
+// PATHS defines an object that will reference appropriate directories
 // that will be built by webpack. Optional. Of course you can
-// reference the directories that you need directly as the values
-// properties in the module.exports object.
+// reference the directories that you need directly as hard-coded values
+// (strings) for the properties in the module.exports object.
+*/
 
 const PATHS = {
     src: join(__dirname, 'src'),
@@ -26,7 +31,7 @@ const PATHS = {
     build: join(__dirname, 'build')
 };
 
-// so the PATHS constant above can help refer to your folders.
+// Thus the PATHS constant above can help refer to your folders.
 // PATHS.src = your folder called "src"
 // PATHS.build = your folder called "build"
 // etc.
@@ -54,7 +59,7 @@ module.exports = {
     output: {
         path: process.cwd(),
         publicPath: '/yourProjectName/',
-        filename: 'bundle.js'
+        filename: join(PATHS.build,'bundle.js')
     },
     module: {
         loaders: [{
