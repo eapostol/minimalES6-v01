@@ -19,6 +19,7 @@ I filled in the information to initialize the repo as required.
 
 Then install webpack GLOBALLY. this makes it available to transpile
 at your terminal. I discovered this issue through user testing with Ala.
+My machine already has webpack installed globally.
 
 npm install -g webpack
 
@@ -67,6 +68,14 @@ to add build and start properties
     "build": "webpack",
     "start": "webpack-dev-server"
   }
+  
+  the build property above tells npm what module is used to build the site.
+  In this case, its webpack (as opposed to Node)
+   
+   the start property tells npm what to start. In this case, it's 
+   the webpack dev server, used for testing (like an Apache server).
+   You will likely explore Apache when you cover PHP and Wordpress.
+
   
  Create a file called webpack.config.js 
   - use my example web.config.js 
