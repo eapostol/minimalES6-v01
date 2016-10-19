@@ -1,4 +1,4 @@
-# minimalES6-v01
+# Shopping Cart using - minimalES6-v01
 
 A minimal website that would be required to run ES6 type code. 
 
@@ -7,34 +7,36 @@ Version 1.1.
 
 THIS GIT URL is at 
 
-https://github.com/eapostol/minimalES6-v01.git
+https://github.com/eapostol/project03cart
 
-I created the repo on the git website, then cloned it into a local
-directory with a similar name as the repo.
+These files are based upon mirroring the repository found at
 
-In the subdirectory I created for the project, I invoked git init from 
-the terminal.
+https://github.com/eapostol/minimalES6-v01 
 
-I filled in the information to initialize the repo as required.
+Notes on how the package.json was setup (if you are going to do this on your own...in the future)
 
-Then install webpack GLOBALLY. this makes it available to transpile
+Make sure you create a repo for your projects that may use this repo!
+
+Make sure you ran **npm init** to create your basic _package.json_ file.
+
+Make sure webpack is globally installed, making it available to transpile
 at your terminal. I discovered this issue through user testing with Ala.
 My machine already has webpack installed globally.
 
-npm install -g webpack
+_npm install -g webpack_
 
 Next, I installed the following modules the order is referenced below,
 using 
 
-npm install --save-dev nameOfModule
+_npm install --save-dev nameOfModule_
  
 as usual. 
 
 Ignore the version numbers referenced below, I copied the module names 
 from package.json. So at the terminal it would be like
 
-npm install --save-dev webpack
-npm install --save-dev webpack-dev-server
+_npm install --save-dev webpack
+npm install --save-dev webpack-dev-server_
 
 etc.
 
