@@ -4,7 +4,6 @@ A minimal website that would be required to run ES6 type code.
 
 Version 1.1.
 
-
 THIS GIT URL is at 
 
 https://github.com/eapostol/project03cart
@@ -13,11 +12,51 @@ These files are based upon mirroring the repository found at
 
 https://github.com/eapostol/minimalES6-v01 
 
-Notes on how the package.json was setup (if you are going to do this on your own...in the future)
+**You will want to mirror this repo for your own purposes.**
 
-Make sure you create a repo for your projects that may use this repo!
+To do this, follow the instructions below.
 
-Make sure you ran **npm init** to create your basic _package.json_ file.
+1. Make sure you create a repo for your projects that may use this repo!
+-go to github.com and login.
+-make a new repository with a project name that is appropriate
+-choose no .gitignore or readme.md file when creating.
+-then click the button to create the repo!
+-note the Github url for your project, it will be something like
+https://github.com/yourgithubID/projectName.git
+
+2. go to your _terminal / DOS prompt / command line interface (CLI)
+-go to your folder where all your projects are stored.
+-create a new directory for your project (for example _foldername_). 
+ (usually mkdir is the command to use)
+ 
+3. Then perform the following _git_ commands at the prompt
+
+ $ git clone --mirror https://github.com/eapostol/project03cart.git _foldername_
+ 
+ $ cd _foldername_
+ 
+ $ git push --mirror https://github.com/_yourgithubID_/**projectName.git**
+
+
+where foldername is the name of your folder that you created
+and yourgithubID is your github account ID
+and projectName.git is the .git filename associated your repo project.
+ 
+(source : http://bit.ly/howtomirrorgitrepo )
+
+**
+Notes on how the package.json**
+ 
+Follow these notes if you are going to build your project from scratch.
+(In other words, not mirroring this repository)
+
+Make sure you have a remote respository to store the files you are
+creating first!
+
+Make sure you run **npm init** to create your basic _package.json_ file.
+
+For the remote URL of your repo, when asked, use the github link you
+created for your project as indicated above.
 
 Make sure webpack is globally installed, making it available to transpile
 at your terminal. I discovered this issue through user testing with Ala.
