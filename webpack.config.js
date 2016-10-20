@@ -24,12 +24,15 @@ const webpack = require('webpack');
 // reference the directories that you need directly as hard-coded values
 // (strings) for the properties in the module.exports object.
 */
+console.log('__dirname = ' + __dirname);
 
 const PATHS = {
     src: join(__dirname, 'src'),
     fonts: join(__dirname, 'fonts'),
-    build: join(__dirname, 'build')
+    build: 'build'
 };
+
+// build: join(__dirname, 'build')
 
 // Thus the PATHS constant above can help refer to your folders.
 // PATHS.src = your folder called "src"
@@ -58,20 +61,23 @@ module.exports = {
     },
     output: {
         path: process.cwd(),
-        publicPath: '/yourProjectName/',
+        publicPath: '',
         filename: join(PATHS.build,'bundle.js')
     },
     module: {
-        loaders: [{
+        loaders: [
+        {
             test: /\.css$/,
             loaders: ['style', 'css'],
             include: PATHS.src
-        }, {
+        },
+        {
             test: /\.js$/,
             loader: 'babel',
             include: PATHS.src,
             exclude: /node_modules/
-        }, {
+        },
+        {
             test: /\.(eot|svg|ttf|woff|woff2)$/,
             include : PATHS.fonts,
             loader: `file?name=/fonts/[name].[ext]`
