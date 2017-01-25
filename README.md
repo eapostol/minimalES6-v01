@@ -2,8 +2,10 @@
 
 A minimal website that would be required to run ES6 type code. 
 
-version 1.1 released 19th Oct 2016
-updated 1.2 released 25th Jan 2017
+_version_ 1.1 released 19th Oct 2016
+
+**version 1.2** released 25th Jan 2017
+
     - added **Gulp** to the base project repo.
 
 These URL of this repository is at
