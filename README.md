@@ -117,15 +117,21 @@ _npm install --save-dev nameOfModule_
 as usual. 
 
 Note: Ignore the version numbers referenced below, I copied the module names 
-from package.json. So at the terminal it would be like
+from package.json. So at the terminal you would install the modules like so...
 
-_npm install --save-dev webpack
-npm install --save-dev webpack-dev-server_
+_npm install --save-dev webpack_
 
-etc.
+_npm install --save-dev webpack-dev-server_
 
-Not specifying at @latest installs the latest version anyway. But 
-note that they updated BABEL (thanks to my interference lol).
+_npm install --save-dev babel-cli_
+
+etc. (repeating for the remaining modules in the list below)
+
+Note specifying at @latest installs the latest version (if you like)
+
+_npm install --save-dev webpack@latest_
+
+But note that the folks that created BABEL updated BABEL recently (thanks to my interference lol).
 
     1. "webpack": "^1.13.2",
     2. "webpack-dev-server": "^1.15.0"
@@ -142,7 +148,7 @@ note that they updated BABEL (thanks to my interference lol).
     13. (new 2017-25-01) "Gulp": "^3.9.1"
 
 
-No warnings should show upat this point... 
+No warnings should show up at this point... 
  
 7. Then create a file called .babelrc . You see the source file for the 
 code in this repo. This makes babel use ES2015 for sure.
