@@ -48,7 +48,7 @@ It should take a few moments to fork...
 
 5. Now you can **clone** the repository. 
 
-6 (a). If you are cloning using the terminal...
+6. (a) If you are cloning using the terminal...
 - Note the Github URL for your project, it will be something like
 
 https://github.com/yourgithubID/**projectName.git**
@@ -68,7 +68,7 @@ Then perform the following _git_ commands at the prompt
 
 **(should show the files and folders of the cloned repo)**
 
-6 (b). If you are cloning using github desktop...
+6. (b) If you are cloning using github desktop...
 
 - Click on the **Clone or Download** button.
 - Choose **Open in Desktop**.
@@ -79,9 +79,9 @@ Then perform the following _git_ commands at the prompt
 
 7. You can then continue working with the files as usual with your editor, i.e. Sublime, Atom, Brackets, MS Visual Code, Webstorm, etc.
 
-**Notes on how the package.json**
+**HOW TO MANUALLY SET UP THIS REPOSITORY FROM SCRATCH.**
  
-These _alternate_ instructions below are only to be followed if you are going to **build your project from scratch** and not using this repository.
+These _alternate_ instructions below are only to be followed if you are going to **build your project from scratch** and not fork this repository.
 
 1. Make sure you **create a remote respository** to store the files you are
 creating first!
@@ -103,11 +103,10 @@ created for your project as described in step 01 **.
 
 4. For **Is This Ok**, if the settings look good, click yes
 
-5. Make sure webpack is globally installed, making it available to transpile
-at your terminal. I discovered this issue through user testing with Ala.
-My machine already has webpack installed globally.
+5. Make sure webpack and gulp are globally installed, making it available to transpile at your terminal.
 
 _npm install -g webpack_
+_npm install -g gulp_
 
 6. Next install the following modules the order is referenced below,
 using 
