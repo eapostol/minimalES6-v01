@@ -17,7 +17,17 @@ The repository was last used for the repo (to see how the project was created pr
 https://github.com/eapostol/project03cart
 
 
-**You will want to _fork_ this repo for your own purposes.**
+**There are two ways to use this repository.**
+ 
+ **You can use it as a guide to _build a repository that supports ES6 code from scratch_** 
+ 
+ ... OR ... 
+ 
+**You can _fork_ this repo for your own purposes. The instructions immediately below describe _forking_ this repository.** 
+ 
+**Building the repository from scratch is described at the end of this README.**
+ 
+It is recommended that you fork the repository to get things started quickly.  
 
 **Forking** is similar to making a branch or cloning except it creates a _fully independent copy_ of the repository. You can make changes to the repository, but it will not impact the original master. The only way for interaction with the original master to occur is if the owner of the original master branch accepts a _pull request_ (discussed in a another tutorial).
 
@@ -146,6 +156,8 @@ But note that the folks that created BABEL updated BABEL recently (thanks to my 
     12. "style-loader": "^0.13.1",
     13. (new 2017-25-01) "Gulp": "^3.9.1"
 
+
+Note: If you wish to install any other modules that you may need (such as gulp-watch) go ahead and do so.
 
 No warnings should show up at this point... 
  
