@@ -2,18 +2,19 @@
  * Created by Edward_J_Apostol on 2016-08-29.
  */
 /*
-// The commands listed below are from Node.js documentation
-// I assume you installed node, otherwise, this would not work
-// If you are unsure what node.js does, visit http://www.nodejs.org .
-// In a nutshell, nodejs is a 'server-side' javascript interpreter that runs
-// outside the web page and performs tasks related to your OS.
+ The commands listed below are from Node.js documentation
+ I assume you installed node, otherwise, this would not work
+ If you are unsure what node.js does, visit http://www.nodejs.org .
+ In a nutshell, nodejs is a 'server-side' javascript interpreter that runs outside the web page and performs tasks related to your OS.
 
-  require: means require something
-  path: helps finds files and folders - https://nodejs.org/api/path.html
-  resolve: figures out the full 'path' to a file or folder
-  require ('webpack') means you need webpack (assuming you installed it)_
+require: means require something
+path: helps finds files and folders - https://nodejs.org/api/path.html
+resolve: figures out the full 'path' to a file or folder
 
-  */
+e.g. require ('webpack') means you need webpack (assuming you installed it)_
+
+*/
+
 const join = require('path').join;
 const resolve = require('path').resolve;
 const webpack = require('webpack');
@@ -102,7 +103,8 @@ module.exports = {
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin()
-    ]
+    ],
+    watch: true
 };
 
 // host: is the IP address you wish to test against.
