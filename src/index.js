@@ -10,7 +10,7 @@ import Car from './Car';
 
 
 let edward = new Person("Edward");
-let eds_car = new Car();
+let eds_car = new Car("ford");
 
 edward.car = eds_car;
 edward.car.drive(edward);
